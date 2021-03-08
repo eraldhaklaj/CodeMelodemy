@@ -1,0 +1,90 @@
+/* ======================================================================
+****** FLEX-DIRECTION UTILITIES ******
+====================================================================== */
+.direction-row { flex-direction: row !important }
+.direction-column { flex-direction: column !important }
+.direction-row-reverse { flex-direction: row-reverse !important }
+.direction-column-reverse { flex-direction: column-reverse !important }
+
+/* ======================================================================
+****** JUSTIFY-CONTENT UTILITIES ******
+====================================================================== */
+.just-cont-start { justify-content: flex-start !important }
+.just-cont-center { justify-content: center !important }
+.just-cont-end { justify-content: flex-end !important }
+.just-cont-between { justify-content: space-between !important }
+.just-cont-around { justify-content: space-around !important }
+.just-cont-stretch { justify-content: stretch !important }
+
+/* ======================================================================
+****** JUSTIFY-ITEMS UTILITIES ******
+====================================================================== */
+.just-i-start { justify-items: flex-start !important }
+.just-i-center { justify-items: center !important }
+.just-i-end { justify-items: flex-end !important }
+.just-i-between { justify-items: space-between !important }
+.just-i-around { justify-items: space-around !important }
+.just-i-stretch { justify-items: stretch !important }
+
+/* ======================================================================
+****** ALIGN-CONTENT UTILITIES ******
+====================================================================== */
+.align-cont-start { align-content: flex-start !important }
+.align-cont-center { align-content: center !important }
+.align-cont-end { align-content: flex-end !important }
+.align-cont-between { align-content: space-between !important }
+.align-cont-around { align-content: space-around !important }
+.align-cont-stretch { align-content: stretch !important }
+
+/* ======================================================================
+****** ALIGN-ITEMS UTILITIES ******
+====================================================================== */
+.align-i-start { align-items: flex-start !important }
+.align-i-center { align-items: center !important }
+.align-i-end { align-items: flex-end !important }
+.align-i-between { align-items: space-between !important }
+.align-i-around { align-items: space-around !important }
+.align-i-stretch { align-items: stretch !important }
+
+/* ======================================================================
+****** JUSTIFY-SELF UTILITIES ******
+====================================================================== */
+.just-s-start { justify-self: flex-start !important }
+.just-s-center { justify-self: center !important }
+.just-s-end { justify-self: flex-end !important }
+.just-s-between { justify-self: space-between !important }
+.just-s-around { justify-self: space-around !important }
+.just-s-stretch { justify-self: stretch !important }
+
+/* ======================================================================
+****** ALIGN-SELF UTILITIES ******
+====================================================================== */
+.align-s-start { align-self: flex-start !important }
+.align-s-center { align-self: center !important }
+.align-s-end { align-self: flex-end !important }
+.align-s-between { align-self: space-between !important }
+.align-s-around { align-self: space-around !important }
+.align-s-stretch { align-self: stretch !important }
+
+/* ======================================================================
+****** FLEX-WRAP UTILITIES ******
+====================================================================== */
+.flex-wrap-false { flex-wrap: nowrap !important }
+.flex-wrap-true { flex-wrap: wrap !important }
+
+/* ======================================================================
+****** ORDER UTILITIES ******
+====================================================================== */
+.ord-0 { order: 0 !important }
+.ord-1 { order: 1 !important }
+.ord-2 { order: 2 !important }
+.ord-3 { order: 3 !important }
+.ord-4 { order: 4 !important }
+.ord-5 { order: 5 !important }
+.ord-6 { order: 6 !important }
+.ord-7 { order: 7 !important }
+.ord-8 { order: 8 !important }
+.ord-9 { order: 9 !important }
+.ord-10 { order: 10 !important }
+.ord-11 { order: 11 !important }
+.ord-12 { order: 12 !important }

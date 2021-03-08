@@ -1,0 +1,271 @@
+.courses {
+    padding: 4rem 2rem;
+    margin-top: 6rem;
+
+    .courses &__carousel {
+        grid-gap: 3.5rem;
+    }
+}
+
+.course-card {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+    background: linear-gradient(to bottom, $color-primary-lighter, $color-primary-darker);
+
+    &:hover &__body--button {
+        opacity: 1;
+        visibility: visible;
+        height: unset;
+    }
+
+    &:hover &__body--details {
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        padding-top: 0;
+    }
+
+    &:hover &__body {
+        color: $color-white;
+    }
+
+    &:hover &__body::after {
+        transform: scaleY(0);
+    }
+
+    &:hover &__header {
+        color: $color-secondary;
+    }
+
+    &:hover &__header--title {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+
+    &:hover &__header::after {
+        transform: scaleY(1);
+    }
+
+    &:hover {
+        .bar-beginner {
+            background-color: $color-grey-light-2;
+
+            &::before {
+                background-color: $color-grey-light-2;
+            }
+
+            &::after {
+                background-color: $color-secondary-darker;
+            }
+        }
+
+        .bar-intermediate {
+            background-color: $color-secondary-darker;
+
+            &::before {
+                background-color: $color-grey-light-2;
+            }
+
+            &::after {
+                background-color: $color-secondary-darker;
+            }
+        }
+
+        .bar-advanced {
+            background-color: $color-secondary-darker;
+
+            &::before {
+                background-color: $color-secondary-darker;
+            }
+
+            &::after {
+                background-color: $color-secondary-darker;
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: white;
+        z-index: 1;
+        transition-delay: .15s;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: top center;
+            background: white;
+            z-index: -1;
+            transition: transform .3s;
+            transition-delay: .15s;
+        }
+
+        &--title {
+            color: $color-secondary;
+            padding: .5rem 1rem;
+            border-radius: 50rem;
+            box-shadow: 0 0 .4rem .4rem rgba(0,0,0,.1);
+            background-color: $color-white;
+            transition: all 0s;
+            transition-delay: .15s;
+        }
+
+        &--difficulty {
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+            .bar {
+                position: relative;
+                width: 2rem;
+                height: .3rem;
+                border-radius: 25%;
+                margin-right: 1rem;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -.9rem;
+                    left: 0;
+                    width: 2rem;
+                    height: .3rem;
+                    border-radius: 25%;
+                    margin-right: 1rem;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: .9rem;
+                    left: 0;
+                    width: 2rem;
+                    height: .3rem;
+                    border-radius: 25%;
+                    margin-right: 1rem;
+                }
+            }
+
+            .bar-beginner {
+                background-color: rgba(0,0,0,.25);
+                transition-delay: .15s;
+
+                &::before {
+                    background-color: rgba(0,0,0,.25);
+                    transition-delay: .15s;
+                }
+
+                &::after {
+                    background-color: rgba(250, 250, 250, 1);
+                    transition-delay: .15s;
+                }
+            }
+
+            .bar-intermediate {
+                background-color: rgba(250, 250, 250, 1);
+                transition-delay: .15s;
+
+                &::before {
+                    background-color: rgba(0,0,0,.25);
+                    transition-delay: .15s;
+                }
+
+                &::after {
+                    background-color: rgba(250, 250, 250, 1);
+                    transition-delay: .15s;
+                }
+            }
+
+            .bar-advanced {
+                background-color: rgba(250, 250, 250, 1);
+                transition-delay: .15s;
+
+                &::before {
+                    background-color: rgba(250, 250, 250, 1);
+                    transition-delay: .15s;
+                }
+
+                &::after {
+                    background-color: rgba(250, 250, 250, 1);
+                    transition-delay: .15s;
+                }
+            }
+
+            .bar-text {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 2rem 2rem 2rem;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(1);
+            transform-origin: bottom center;
+            background: white;
+            z-index: -1;
+            transition: transform 0.3s;
+        }
+
+        &--title {
+            margin: 1.5rem 0 .5rem 0;
+        }
+
+        &--details {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            color: $color-muted;
+            padding-top: 2rem;
+            opacity: 1;
+            visibility: visible;
+            height: 4.6rem;
+
+            .classes-number, .classes-length {
+                display: flex;
+                align-items: center;
+
+                &--icon {
+                    margin-right: .3rem;
+                }
+            }
+        }
+
+        &--button {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            display: flex;
+            justify-content: center;
+            button {
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

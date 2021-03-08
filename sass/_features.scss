@@ -1,0 +1,51 @@
+@import "abstracts/variables";
+
+.clipped {
+    &__double {
+        position: relative;
+        margin-top: -7rem;
+        padding-top: 8rem;
+        clip-path: ellipse(116% 100% at 50% 105%);
+        z-index: 1;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $color-white;
+            transform: translateY(1rem);
+            clip-path: ellipse(116% 100% at 50% 105%);
+            z-index: -1;
+        }
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: ellipse(116% 100% at 50% 105%);
+            z-index: -2;
+        }
+
+        &--primary::before {
+            background: $color-primary-darkest;
+        }
+
+        &--secondary::before {
+            background: $color-secondary-darkest;
+        }
+    }
+}
+
+.clipped {
+    position: relative;
+    margin-top: -7rem;
+    padding-top: 8rem;
+    clip-path: ellipse(116% 100% at 50% 105%);
+    z-index: 1;
+}

@@ -1,0 +1,19 @@
+.background-white {
+    background-color: $color-white;
+}
+
+.background-primary {
+    background-color: $color-primary;
+}
+
+.background-secondary {
+    background-color: $color-secondary;
+}
+
+.background-light {
+    background: $color-grey-light-2;
+}
+
+.background-linear-light {
+    background: linear-gradient(to top, rgba($color-grey-light-2,0) 0%, rgba($color-grey-light-2,1) 5%, rgba($color-grey-light-2,1) 95%, rgba($color-grey-light-2,0) 100%);
+}

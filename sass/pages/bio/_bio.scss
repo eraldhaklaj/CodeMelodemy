@@ -1,0 +1,60 @@
+@import"../../abstracts/variables";
+.bio-data{
+  grid-column: col-1/col-4;
+  &__info{
+    &--email{
+      color: $color-secondary-ligher;
+      font-weight: 700;
+    }
+  }
+  &__photo {
+    width: 100%;
+    &--img {
+      border: 7px solid $color-primary;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    font-size: 1.6rem;
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.bio-main {
+
+  &__header {
+    &--area{
+      color: $color-primary-darker;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 3rem;
+    }
+    border-bottom: 3px solid $color-primary;
+  }
+
+  h1 {
+    font-family: $font-family;
+    color: $color-secondary;
+  }
+
+
+  &__desc {
+    p{
+      margin-bottom: 3rem;
+    }
+    border-bottom: 3px solid $color-primary;
+  }
+
+  &__list {
+    &--item {
+      margin-bottom: .5rem;
+      color: $color-secondary-ligher;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    border-bottom: 3px solid $color-primary;
+  }
+
+}

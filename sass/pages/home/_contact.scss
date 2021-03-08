@@ -1,0 +1,14 @@
+@import "../../abstracts/variables";
+
+.contact {
+  background: linear-gradient(to bottom,$color-secondary-ligher,$color-secondary-darker);
+}
+
+.form-control, .btn {
+  font-size: 100% !important;
+}
+
+.contact__header--heading {
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+}

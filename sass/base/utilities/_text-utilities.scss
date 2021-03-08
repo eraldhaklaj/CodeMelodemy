@@ -1,0 +1,99 @@
+@import "../../abstracts/variables";
+
+
+.t-justify {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+}
+
+.t-center {
+  text-align: center !important;
+}
+
+.t-left {
+  text-align: left !important;
+}
+
+.t-right {
+  text-align: right !important;
+}
+
+.t-break {
+  word-break:break-all !important;
+}
+
+.t-lowercase{
+  text-transform:lowercase !important;
+}
+
+.t-uppercase{
+  text-transform:uppercase !important;
+}
+
+.t-capitalize{
+  text-transform:capitalize !important;
+}
+
+.t-decoration-none {
+  text-decoration: none !important;
+}
+
+.t-decoration-underline {
+  text-decoration: underline;
+}
+
+.t-muted {
+  color: $color-muted !important;
+}
+
+.t-primary {
+  color: $color-primary !important;
+}
+
+.t-secondary {
+  color: $color-secondary !important;
+}
+
+.t-success {
+  color: $color-success !important;
+}
+
+.t-danger {
+  color: $color-danger !important;
+}
+
+.t-warning {
+  color: $color-warning !important;
+}
+
+.t-info {
+  color: $color-info !important;
+}
+
+.t-white {
+  color: #ffffff !important;
+}
+
+.t-bold {
+  font-weight: 700 !important;
+}
+
+.t-bolder {
+  font-weight: bolder !important;
+}
+
+.t-normal {
+  font-weight: 400 !important;
+}
+
+.t-light {
+  font-weight: 300 !important;
+}
+
+.t-lighter {
+  font-weight: lighter !important;
+}
+
+.t-italic {
+  font-style: italic !important;
+}
